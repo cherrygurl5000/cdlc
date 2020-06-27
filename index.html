@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--Added special character for Creme de la Creme title-->
+	<title>Cr&#1104;me de la Cr&#1104;me</title>
+
+    <link href="css/cdlc.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chicle' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+
+    <link rel="shortcut icon" href="pics/cdlc-logo.ico" type="image/x-icon" />
+  
+    
+</head>
+
+<body>
+	<div class="main">
+
+        <!--Navigation div contains menu and logo-->
+		<div class="navigation">
+            
+            <!--Navigation Menu for mobile users to access menu items-->
+			<h2 id="top" onclick="showMenu('nav-menu')">&#9776; <span class="menus">Menu</span></h2>
+			<div id="nav-menu" class="navigation-menu">
+                <ul>
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About</a> </li>
+                    <li onclick="showMenu('services-menu')">Services &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" ></i>
+                        <ul id="services-menu">
+                            <li><a href="detailing.html">Mobile Auto Detailing</a></li>
+                            <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
+                            <li><a href="painting.html">Paint Corrections</a></li>
+                        </ul></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="gallery.html">Gallery</a> </li>
+                    <li><a href="reviews.html">Reviews</a> </li>
+                    <li><a href="contact.html">Contact</a> </li>
+                    <li><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa">Book Now!</a> </li>
+                </ul>
+
+
+            <!--End nav-menu-->
+            </div>
+             
+            <!--Add logo with link to home page-->
+            <div class="logo">
+                <a href="index.html"><img src="pics/cdlc-logo.png" alt="CDLC Logo"/></a>
+
+            <!--End of logo div-->
+            </div>
+
+            <!--Add discount statement-->
+            <div class="discount">&#42; Multi-Vehicle discount with 3 or more Vehicles
+
+            <!--End of discount div-->
+            </div>
+
+        <!--End of navigation div-->
+        </div>
+
+        <!--Section for Mobile Detailing-->
+        <div class="sections" id="details">
+            <a href="detailing.html">
+                <img src="pics/detailing.jpg" alt="Mobile Auto Detailing Image" id="detail"/>
+            </a>
+            <h2>Mobile Auto Detailing</h2>
+            <p class="slogan">Treat your <span class="auto">INVESTMENT</span> to a spa treatment!</p>
+            <p class="pricing">Starting at &#36;100</p>
+
+            <a href="detailing.html"><button type="button" class="learn" id="learn1">
+                Learn More</button></a>
+
+            <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa"><button type="button" class="book">
+                Book It Now!</button></a>
+
+        <!--End of detailing div-->
+        </div>
+
+        <!--Section for Interior Detailing-->
+        <div class="sections" id="interior">
+                <a href="interior.html">
+                    <img src="pics/waxing.jpg" alt="Immaculate Interior Conditioning Image" id="wax"/>
+                </a>
+                <h2>Immaculate Interior Conditioning</h2>
+                <p class="slogan">Treat your car to the spa!</p>
+                <p class="pricing">Starting at &#36;200</p>
+    
+                <a href="interior.html"><button type="button" class="learn" id="learn2">
+                    Learn More</button></a>
+    
+                <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa"><button type="button" class="book" id="book2">
+                    Book It Now!</button></a>
+    
+        <!--End of interior div-->
+        </div>
+
+        <!--Section for Paint Corrections-->
+        <div class="sections" id="painting">
+                <a href="painting.html">
+                    <img src="pics/painting.jpg" alt="Paint Correction Image" id="paint"/>
+                </a>
+                <h2>Paint Correction</h2>
+                <p class="slogan">Treat your <span class="auto">INVESTMENT</span> to a spa treatment!</p>
+                <!-- <p class="pricing">Starting at &#36;60</p> -->
+                <p class="pricing">&nbsp;</p>
+    
+                <a href="painting.html"><button type="button" class="learn" id="learn3">
+                    Learn More</button></a>
+    
+                <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa"><button type="button" class="book" id="book3">
+                    Book It Now!</button></a>
+    
+        <!--End of painting div-->
+        </div>
+
+        <div id="serving">
+            <h2>PROUDLY SERVING</h2>
+            <p id="areas">Austin, TX and the Surrounding Areas</p>
+
+        <!--End of serving div-->
+        </div>
+
+        <!--Google Map of service area-->
+        <div id="map">
+            <!--Embedded a medium-sized Google Map of Austin, TX-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220449.36396036684!2d-97.89348498683366!3d30.30768629240822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1575609269027!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        
+        <!--End of map div-->
+        </div>
+
+        <!--Footer containing all links for the site-->
+        <div class="footer">
+                <ul class="menu-footer">
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="about.html">About</a> </li>
+                        <li>Services
+                            <ul>
+                                <li><a href="detailing.html">Mobile Auto Detailing</a></li>
+                                <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
+                                <li><a href="painting.html">Paint Corrections</a></li>
+                            </ul></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a> </li>
+                        <li><a href="reviews.html">Reviews</a> </li>
+                        <li><a href="contact.html">Contact</a> </li>
+                        <li><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa">Book Now!</a> </li>
+                    </ul>
+        </div>
+
+        <!--Div containing all vital information (hours, contact info, and social media)-->
+        <div class="final" id="f-index">
+            <!--Add logo with link to home page-->
+            <div class="logo">
+                    <a href="index.html"><img src="pics/cdlc-logo.png" alt="CDLC Logo"/></a>
+    
+            <!--End of logo div-->
+            </div>
+
+            <!--Add the hours and contact information-->
+            <div class="sched">
+                Austin, TX 78717 <br />
+                Mon-Fri: 9am - 6pm <br />
+                Sat: 9am - 1pm <br />
+                Sun: Closed <br />
+
+                <span class="emails">&#9993;</span> <a href="mailto:cherrygurl5000o@yahoo.com?Subject=Service%20Inquiry" target="_top">
+                        CDLCAuto@gmail.com</a><br />
+                <i class="fa fa-phone" ></i> <a href="tel:5128948614" id="call">(512) 894-8614</a><br />
+                
+            
+            <!--End of sched div-->
+            </div>
+
+            <!--Add social media pages-->
+            <div class="social">
+                <!--Link to Facebook page-->
+                <a target="_blank" href="https://www.facebook.com/Creme-De-La-Creme-Auto-Spa-608394829259653/">
+                    <img src="pics/fb.svg" alt="Facebook Link" /></a>
+                <!--Link to Yelp reviews-->
+                <a target="_blank" href="https://www.yelp.com/biz/creme-de-la-creme-auto-spa-austin">
+                    <img src="pics/yelp.svg" alt="Yelp Link" /></a target="_blank">
+                <!--Link to Instagram page-->
+                <a target="_blank" href="https://www.instagram.com/cremedelacremeautospa/?hl=en">
+                    <img src="pics/ig.svg" alt="Instagram Link" /></a target="_blank">
+
+            <!--End of social div-->
+            </div>
+
+            <!--Add company copyright info, to be updated yearly-->
+            <p class="copyright" id="copy">Copyright &#169; 2020 Cr&#1104;me de la Cr&#1104;me Auto Spa. 
+                All rights reserved.
+            </p>
+
+        <!--End of final div-->
+        </div>
+
+        
+        <div>Icons made by 
+            <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" target="_blank">Pixel perfect</a> 
+            from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></div>
+        
+    <!--End main div-->
+    </div>
+
+
+    <!--Javascript for the site-->
+    <script src="js/cdlc.js"></script>
+
+</body>
+</html>

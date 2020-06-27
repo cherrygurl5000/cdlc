@@ -1,0 +1,733 @@
+:root {
+    --carolina: #99BADD; /*Carolina Blue*/
+    --dark-blue: #19324D; /*Dark Blue*/
+    --silver: #C0C0C0; /*Silver*/
+    --dark-silver: #333333; /*Dark Silver*/
+    --purple: #9900DD; /*Purple*/
+    --green: #99BA00; /*Green*/
+}
+body {
+    background-color: var(--dark-blue);
+}
+.main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--dark-blue);
+}
+
+img {
+    width: 50%;
+    /* margin-left: 25%;*/
+    margin-top: 10%; 
+}
+
+iframe {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a img:hover {
+    transform: scale(1.2);
+}
+
+/*Styling for navigation div elements*/
+.navigation {
+    padding-bottom: 5%;
+}
+#top {
+    border: black 1px solid;
+    background: var(--silver);
+    width: 40px;
+    text-align: center;
+    border-radius: 20%;
+    font-weight: 900;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding-bottom: 1%;
+    padding-right: 0.5%;
+}
+.menus {
+    display: none;
+}
+.navigation-menu {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    background: var(--silver);
+    padding-right: 5%;
+    font-size: x-large;
+    z-index: 25;
+}
+.navigation-menu ul {
+    margin: 0;
+    padding: 0;
+}
+.navigation-menu li {
+    list-style-type: none;
+    border-bottom: 2px solid var(--dark-blue);
+    width: 100%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    padding-left: 25%;
+    padding-top: 5%;
+}
+.navigation-menu li:nth-last-child(1) {
+    border-bottom: none;
+}
+.navigation-menu li ul li {
+    font-size: medium;
+}
+#services-menu {
+    display: none;
+    position: relative;
+}
+#services-menu li {
+    position: absolute;
+    left: 160px;
+    background: var(--silver);
+}
+/*Interior Conditioning positioning*/
+.navigation-menu li ul li:nth-last-child(2) {
+    top: 74px;
+}
+/*Paint corrections positioning*/
+.navigation-menu li ul li:nth-last-child(1) {
+    top: 147px;
+}
+
+/*Styling for the multiple logos on the pages*/
+.logo {
+    width: 100px;
+    margin-left: 31%;
+    margin-top: 5%;
+    display: inline-block;
+}
+.logo img {
+    width: 70%;
+    margin-left: 15%;
+}
+
+/*Styling for the discount statement shown on multiple pages*/
+.discount {
+    color: white;
+    width: 33%;
+    display: inline-block;
+    margin-left: 2%;
+    padding-bottom: 3%;
+    font-size: small;
+    vertical-align: text-bottom;
+}
+
+/*Styling for the various sections of the site*/
+.sections h2, .section h2 {
+    font-family: 'Courgette';
+    color: var(--green);
+}
+.sections img, .section img {
+    border-radius: 50%;
+}  
+.slogan {
+    font-family: 'Oswald';
+    margin-top: -5%;
+    color: #0D1926;
+}
+/*Styling for INVESTMENT within the slogan*/
+.auto {
+    font-family: Chicle;
+    color: #2d5886;
+}
+.pricing {
+    margin-top: -4%;
+}
+#detailing {
+    background-color: var(--carolina);
+    padding-bottom: 10%;
+    text-align: center;
+}
+#interior {
+    padding-bottom: 10%;
+    text-align: center;
+    color: white;
+}
+#interior h2 {
+    font-family: 'Courgette';
+}
+#interior > .slogan {
+    color: #ecf2f9;
+}
+#painting {
+    background-color: var(--carolina);
+    padding-bottom: 10%;
+    text-align: center;
+}
+/*Styling for the serving section of the page*/
+#serving {
+    text-align: center;
+    background-image: url('../pics/car.jpg');
+    background-size: cover;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#areas {
+    margin-top: -5%;
+}
+/*Styling for the Learn More Buttons*/
+.learn {
+    background-color: #d9e5f2; /*Off-White for Learn More Buttons*/
+    border-radius: 35%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/*Styling for the Book It Buttons*/
+.book {
+    background-color: #3971AC; /*Medium Blue for Booking Buttons*/
+    color: white;
+    padding: 5px 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+/*Styling for the footer menu/navigation*/
+.menu-footer {
+    margin: 0;
+    padding: 0;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    color: var(--silver);
+  }
+  /*Styling for the initial footer links*/
+.menu-footer li {
+    width: fit-content;
+    border-right: var(--carolina) 3px solid;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+/*Remove the border from the last item in the footer menu*/
+.menu-footer li:nth-last-child(1) {
+    border-right: none;
+}
+/*Add relative positioning to Services in order to add absolute 
+positioning to the Services sub-links*/
+.menu-footer li ul {
+    position: relative;
+}
+/*Styling for the sub-links of the Services section*/
+.menu-footer li ul li {
+     position: absolute;
+     top: 5px;
+     left: -80px;
+     border: var(--carolina) 2px solid;
+     text-align: center;
+     font-size: small;
+}
+/*Mobile Detailing Positioning*/
+.menu-footer li ul li:nth-last-child(3) {
+    width: 80px;
+} 
+/*Interior Conditioning positioning*/
+.menu-footer li ul li:nth-last-child(2) {
+    left: 4px;
+    width: 120px;
+}
+/*Paint corrections positioning*/
+ .menu-footer li ul li:nth-last-child(1) {
+    left: 128px;
+    width: 70px;
+    border: var(--carolina) 2px solid;
+}
+/*Styling for the links within the footer*/
+.menu-footer a {
+    color: white;
+}
+
+/*Styling for the vital information section of the page*/
+.final {
+    background-color: var(--carolina);
+    padding-bottom: 10%;
+    text-align: center;
+    margin-top: 20%;
+}
+/*Styling for the logo within the final div*/
+.final > .logo {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 3%;
+    margin-bottom: 3%;
+}
+.sched {
+    color: var(--dark-silver);
+}
+.sched a {
+    text-decoration-line: underline;
+    color: #000099; /*Darker blue for contact links*/
+}
+/*Styling for the telephone icon*/
+.sched i {
+    color: var(--dark-silver);
+    font-size: x-large;
+}
+/*Styling for the email icon*/
+.emails {
+    color: white;
+    font-size: x-large;
+}
+
+/*Styling for the social media icons*/
+.social img {
+    width: 60px;
+    margin-left: 20px;
+}
+
+/*Added styling for the remaining pages of the site*/
+.service-breaks {
+    width: 90%;
+    margin-left: 5%;
+}
+.service-breaks li {
+    font-family: 'Oswald';
+    text-align: left;
+}
+.dirty {
+    color: var(--purple);
+}
+#pics {
+    background-color: var(--carolina);
+    padding-bottom: 10%;
+    padding-top: 5%;
+    text-align: center;
+}
+.name {
+    color: var(--purple);
+    font-family: 'Oswald';
+    margin-top: -4%;
+}
+#contact {
+    background-color: var(--carolina);
+    padding-bottom: 10%;
+    padding-top: 5%;
+    text-align: center;
+}
+fieldset {
+    text-align: left;
+    color: var(--purple);
+}
+fieldset label  {
+    margin-left: -4%;
+    width: 98%;
+    color: black;
+}
+input[type=text], input[type=email], input[type=tel], textarea {
+    width: 98%;
+    margin-bottom: 1%;
+    padding: 2% 0%;
+}
+label {
+    text-align: left;
+    padding: 5px;
+    float: left;
+    clear: right;
+    font-family: 'Oswald';
+}
+form > .learn {
+    font-family: 'Oswald';
+    font-size: 110%;
+}
+
+.description {
+    text-indent: 3%;
+    text-align: left;
+    width: 95%;
+    margin-left: 2%;
+}
+#book0 {
+    background: var(--dark-blue);
+}
+
+.pictures {
+    width: 98%;
+    margin-left: 1%;
+    background-color: green;
+    /* margin-bottom: 20%; */
+}
+.pictures img, .mySlides img{
+    border-radius: 0%;
+    float: left;
+    /* margin-bottom: 15%; */
+    width: 18%;
+    margin-left: 1%;
+    min-height: 61px;
+}
+.pic-grid {
+    background-color: green;
+    /* border: orange 3px solid; */
+}
+#p-footer {
+    clear: both;
+}
+/* #pic1 {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 0%;
+} */
+
+#shown {
+    width: 95%;
+    margin-left: 2%;
+    border: 2px inset var(--dark-silver);
+    /* display: none; */
+}
+
+.prev, .next {
+    position: absolute;
+    /* display: none; */
+}
+
+/*Form validation styling
+input.invalid {
+    border-color: red;
+}*/
+
+/*Footer menu does not fit properly on really small mobile screens*/
+@media only screen and (max-width: 380px) {
+
+    .menu-footer li, .menu-footer li ul li {
+        font-size: x-small;
+    }
+    .menu-footer {
+        margin-left: 5%;
+    }
+    /*Paint corrections positioning*/
+    .menu-footer li ul li:nth-last-child(1) {
+        width: 60px;
+    }
+}
+
+/*Added for mobile screen rotation*/
+@media only screen and (orientation: landscape) {
+
+    .navigation > .logo {
+        margin-left: 38%;
+    }
+    .discount {
+        width: 25%;
+        margin-left: 15%;
+    }
+    .sections img {
+        width: 40%;
+        margin-left: -45%;
+        margin-top: 5%;
+    }
+    .sections h2, .sections p {
+        margin-left: 45%;
+        margin-top: -30%;
+    }
+    #top {
+        top: 12%;
+    }
+    /* #detailing {
+        padding-bottom: 150%;
+    } */
+    .slogan {
+        margin-top: -2%;
+    }
+    .pricing {
+        margin-top: -1%;
+    }
+    .learn {
+        margin-left: 45%;
+    }
+    .book {
+        margin-left: 62%;
+        margin-top: 1%;
+        margin-bottom: 6%;
+    }
+    #book0, #book1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+    }
+
+    #areas {
+        margin-top: -2%;
+        margin-left: 0%;
+    }
+
+    .menu-footer li, .menu-footer li ul li {
+        font-size: medium;
+    }
+    .menu-footer {
+        margin-left: 12%;
+    }
+    /*Mobile Detailing Positioning*/
+    .menu-footer li ul li:nth-last-child(3) {
+        width: 100px;
+    }
+    /*Interior Conditioning positioning*/
+    .menu-footer li ul li:nth-last-child(2) {
+        width: 140px;
+        left: 24px;
+    }
+    /*Paint corrections positioning*/
+    .menu-footer li ul li:nth-last-child(1) {
+        width: 90px;
+        left: 168px;
+    }
+
+    .final {
+        padding-bottom: 20%;
+    }
+    .social {
+        padding-bottom: 5%;
+    }
+    .copyright {
+        margin-top: -20%;
+        margin-left: 5%;
+    }
+
+    .section img {
+        width: 35%;
+    }
+
+    .service-breaks {
+        width: 40%;
+        margin-left: 5%;
+        float: left;
+        padding-bottom: 5%;
+    }
+
+    #book10 {
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+@media only screen and (orientation: landscape) and (max-width: 668px) {
+    .book {
+        margin-left: 59%;
+    }
+    .copyright {
+        margin-top: -22%;
+        margin-left: 5%;
+    }
+}
+
+/*Added for tablet screens when the layout starts to get distorted*/
+@media only screen and (min-width: 768px) {
+    .navigation > .logo {
+        margin-left: 34%;
+        width: 25%;
+        margin-top: 3%;
+    }
+    .discount {
+        width: 18%;
+        margin-left: 19%;
+        padding-bottom: 8%;
+    }
+
+    /* #detailing {
+        padding-bottom: 170%;
+    } */
+    
+    .slogan {
+        margin-top: -2%;
+    }
+    .pricing {
+        margin-top: -1%;
+    }
+    #areas {
+        margin-top: -2%;
+    }
+
+    .menu-footer li, .menu-footer li ul li {
+        font-size: x-large;
+    }
+    .menu-footer li ul li {
+        top: 15px;
+    }
+    .menu-footer {
+        margin-left: 7%;
+    }
+    /*Mobile Detailing Positioning*/
+    .menu-footer li ul li:nth-last-child(3) {
+        width: 140px;
+    }
+    /*Interior Conditioning positioning*/
+    .menu-footer li ul li:nth-last-child(2) {
+        width: 210px;
+        left: 65px;
+    }
+    /*Paint corrections positioning*/
+    .menu-footer li ul li:nth-last-child(1) {
+        width: 130px;
+        left: 278px;
+    }
+
+}
+
+/*Added for large tablet formatting*/
+@media only screen and (min-width: 1024px) {
+    #top {
+        margin-top: 7%;
+    }
+    .menu-footer {
+        margin-left: 17%;
+    }
+
+    .sched {
+        font-size: larger;
+    }
+    .emails, .sched i {
+        font-size: xx-large;
+    }
+    .social {
+        margin-top: -5%;
+    }
+}
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+    .copyright {
+        margin-top: -15%;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .navigation {
+        padding-bottom: 8%;
+    }
+    #top {
+        display: none;
+    }
+    .navigation-menu {
+        display: block;
+        width: 90%;
+        margin-top: 6%;
+        background: rgba(0,0,0,0);
+    }
+    .navigation-menu li {
+        width: fit-content;
+        border-right: var(--silver) 3px solid;
+        float: left;
+        margin: 0;
+        padding: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: xx-large;
+    }
+    /*Remove the border from the last item in the footer menu*/
+    .navigation-menu li:nth-last-child(1) {
+        border-right: none;
+    }
+    #services-menu {
+        width: 200%;
+        text-align: center;
+    }
+    #services-menu li {
+        left: -20px;
+        top: 15px;
+        width: 300px;
+        padding-bottom: 8px;
+        background: var(--dark-silver);
+        border-bottom: black 2px solid;
+        border-right: none;
+    }
+    /*Interior Conditioning positioning*/
+    #services-menu li:nth-last-child(2) {
+        top: 61px;
+    }
+    /*Paint corrections positioning*/
+    #services-menu li:nth-last-child(1) {
+        top: 144px;
+        padding-right: 6px;
+    }
+    /*Styling for the links within the footer*/
+    .navigation-menu a {
+        color: white;
+    }
+
+    .discount {
+        font-size: large;
+    }
+
+    .sections {
+        width: 33%;
+        float: left;
+    }
+    #interior {
+        width: 34%;
+    }
+    .sections h2, .sections p, .sections button, .sections img {
+        margin: 0;
+        padding: 0;
+    }
+    .sections img {
+        margin-top: 5%;
+    }
+    .sections h2 {
+        margin-top: 8%;
+    }
+    .sections button {
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #detailing, #interior {
+        padding-bottom: 5%;
+    }
+    #painting {
+        padding-bottom: 6%;
+    }
+    #serving {
+        width: 49%;
+        margin-top: 36%;
+    }
+    #map {
+        width: 49%;
+    }
+    #f-index {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        float: right;
+        margin-top: -50%;
+        padding-bottom: 16%;
+    }
+    #copy {
+        margin-top: -20%;
+        margin-left: 5%;
+    }
+    .social {
+        margin-top: 8%;
+    }
+    .social img {
+        margin-top: 0%;
+    }
+
+    /* #final-lg {
+        margin-top: 10%;
+        width: 100%;
+        padding-bottom: 20%;
+    } */
+
+}
+@media only screen and (min-width: 1350px) {
+    .final {
+        margin-top: -47%;
+    }
+}

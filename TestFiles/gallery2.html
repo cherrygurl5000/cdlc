@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Gallery: Cr&#1104;me de la Cr&#1104;me</title>
+
+    <link href="css/cdlc.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chicle' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+
+    <style>
+        #shown {
+            width: 50%;
+            margin-left: 5%;
+            margin-top: 8%;
+        }
+        .prev {
+            position: absolute;
+            top: 21%;
+            left: 4%;
+            font-size: 400%;
+            z-index: 20;
+            display: block;
+            height: 300px;
+            width: fit-content;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-sizing: border-box;
+            padding-top: 18%;
+        }
+        .next {
+            position: absolute; 
+            top: 21%;
+            left: 95%;
+            font-size: 400%;
+            z-index: 20;
+            display: block;
+            height: 300px;
+            width: fit-content;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-sizing: border-box;
+            padding-top: 18%;
+        }
+    </style>
+  
+       
+</head>
+
+<body>
+	<div class="main">
+
+		
+        <div class="section" id="pics">
+            <h2>Gallery</h2>
+            <p class="slogan">Treat your <span class="auto">INVESTMENT</span> to a spa treatment!</p>
+            
+            <div id="shown"></div>
+            <div class="pic-grid">
+                <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                <div class="pictures">
+                    <img id="pic1" class="mySlides" src="pics/interior.jpg" alt="Interior Image" onclick="currentSlide(0)" />
+                </div>
+                <div class="pictures">
+                    <img id="pic2" class="mySlides" src="pics/car.jpg" alt="Interior Image" onclick="currentSlide(1)" />
+                </div>
+                <div class="pictures">
+                    <img id="pic3" class="mySlides" src="pics/detailing.jpg" alt="Interior Image" onclick="currentSlide(2)" />
+                </div>
+                <div class="pictures">
+                    <img id="pic4" class="mySlides" src="pics/painting.jpg" alt="Interior Image" onclick="currentSlide(3)" />
+                </div>
+                <div class="pictures">
+                    <img id="pic5" class="mySlides" src="pics/waxing.jpg" alt="Interior Image" onclick="currentSlide(4)" />
+                </div>
+                <div class="pictures">
+                    <img id="pic6" class="mySlides" src="pics/logo-idea.jpg" alt="Interior Image" onclick="currentSlide(5)" />
+                </div>
+                <div class="pictures">
+                    <img id="pic7" class="mySlides" src="pics/yelp.jpg" alt="Interior Image" onclick="currentSlide(6)" />
+                </div>
+
+                
+                
+
+            <!--End of pic-grid-->
+            </div>
+
+        <!--End of pics div-->
+        </div>
+
+    <!--End main div-->
+    </div>
+
+
+    <script src="js/cdlc.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+/*Added for tablet screens when the layout starts to get distorted*/
+@media only screen and (min-width: 768px) {
+    .navigation > .logo {
+        margin-left: 34%;
+        width: 25%;
+        margin-top: 3%;
+    }
+    .discount {
+        width: 18%;
+        margin-left: 19%;
+        padding-bottom: 8%;
+    }
+
+     /* #details {
+        padding-bottom: 170%;
+    }  */
+    #details, #interior, #painting {
+        padding-bottom: 15%;
+    }
+    .slogan {
+        margin-top: -2%;
+    }
+    .pricing {
+        margin-top: -1%;
+    }
+    #areas {
+        margin-top: -2%;
+    }
+    
+    .names {
+        margin-top: -2%;
+    }
+
+    .pic-grid > .pictures img {
+        width: 15%;
+    }
+    
+    .menu-footer li {
+        font-size: large;
+    }
+    .menu-footer li ul li {
+        top: 15px;
+        font-size: x-large;
+    }
+    .menu-footer {
+        margin-left: 7%;
+    }
+    /*Mobile Detailing Positioning*/
+    .menu-footer li ul li:nth-last-child(3) {
+        width: 140px;
+    }
+    /*Interior Conditioning positioning*/
+    .menu-footer li ul li:nth-last-child(2) {
+        width: 210px;
+        left: 65px;
+    }
+    /*Paint corrections positioning*/
+    .menu-footer li ul li:nth-last-child(1) {
+        width: 130px;
+        left: 278px;
+    }
+
+}
+
+/*Added for large tablet formatting*/
+@media only screen and (min-width: 1024px) {
+    #top {
+        margin-top: 7%;
+    }
+    .navigation-menu {
+        width: 30%;
+    }
+    .book {
+        margin-left: 65%;
+    }
+    .menu-footer {
+        margin-left: 17%;
+    }
+
+    .sched {
+        font-size: larger;
+    }
+    .emails, .sched i {
+        font-size: xx-large;
+    }
+    .social {
+        margin-top: -5%;
+    }
+}

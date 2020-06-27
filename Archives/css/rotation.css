@@ -1,0 +1,119 @@
+/*Added for mobile screen rotation*/
+@media only screen and (orientation: landscape) {
+
+    .navigation > .logo {
+        margin-left: 38%;
+    }
+    .discount {
+        width: 25%;
+        margin-left: 15%;
+    }
+    .navigation-menu {
+        width: 30%;
+        position: absolute;
+        top: 26%;
+    }
+    .sections img {
+        width: 40%;
+        margin-left: -45%;
+        margin-top: 5%; 
+    }
+     .sections h2, .sections p {
+        margin: 0;
+        padding: 0;
+        margin-left: 45%;
+    } 
+    .sections h2 {
+        margin-top: -30%;
+    }
+    #top {
+        top: 12%;
+    }
+    .slogan {
+        margin-top: -2%;
+    }
+    .pricing {
+        margin-top: -1%;
+    }
+    .learn {
+        margin-left: 45%;
+    }
+    .cons {
+        margin-left: 0%;
+    }
+    .book {
+        margin-left: 62%;
+        margin-top: 1%;
+        margin-bottom: 6%;
+    }
+    #book0, #book1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+    }
+
+    #areas {
+        margin-top: -2%;
+        margin-left: 0%;
+    }
+
+    .names {
+        margin-top: -2%;
+    }
+
+    .menu-footer li, .menu-footer li ul li {
+        font-size: medium;
+    }
+    .menu-footer {
+        margin-left: 12%;
+    }
+    /*Mobile Detailing Positioning*/
+    .menu-footer li ul li:nth-last-child(3) {
+        width: 100px;
+    }
+    /*Interior Conditioning positioning*/
+    .menu-footer li ul li:nth-last-child(2) {
+        width: 140px;
+        left: 24px;
+    }
+    /*Paint corrections positioning*/
+    .menu-footer li ul li:nth-last-child(1) {
+        width: 90px;
+        left: 168px;
+    }
+
+    .final {
+        padding-bottom: 20%;
+    }
+    .social {
+        padding-bottom: 5%;
+    }
+
+    .section img {
+        width: 35%;
+    }
+
+    .service-breaks {
+        width: 40%;
+        margin-left: 5%;
+        float: left;
+        padding-bottom: 5%;
+    }
+
+    #book10 {
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .next {
+        margin-left: 95%;
+    }
+
+}
+
+@media only screen and (orientation: landscape) and (max-width: 668px) {
+    .book {
+        margin-left: 59%;
+    }
+}

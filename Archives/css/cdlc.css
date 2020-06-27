@@ -1,0 +1,5 @@
+@import "main.css"; /*Styling for mobile screens*/
+@import "smallMobile.css"; /*Styling for small mobile screens up to 380px*/
+@import "rotation.css"; /*Styling for device rotation*/
+@import "tablet.css"; /*Styling for tablet screens starting at 768px*/
+/*@import "laptop.css"; /*Styling for laptop screens starting at 1250px*/

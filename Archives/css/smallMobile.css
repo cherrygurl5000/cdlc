@@ -1,0 +1,16 @@
+/*Footer menu does not fit properly on really small mobile screens*/
+@media only screen and (max-width: 380px) {
+
+    .menu-footer li, .menu-footer li ul li {
+        font-size: x-small;
+    }
+    .menu-footer {
+        margin-left: 5%;
+    }
+    /*Paint corrections positioning*/
+    .menu-footer li ul li:nth-last-child(1) {
+        width: 60px;
+    }
+}
+
+
