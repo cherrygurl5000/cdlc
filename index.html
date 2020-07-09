@@ -10,7 +10,6 @@
     <!--Added special character for Creme de la Creme title-->
 	<title>Cr&#1104;me de la Cr&#1104;me</title>
 
-    <link href="css/cdlc.css" rel="stylesheet"/>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
@@ -18,6 +17,10 @@
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
 
     <link rel="shortcut icon" href="pics/cdlc-logo.ico" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/cdlc.css" rel="stylesheet"/>
   
     
 </head>
@@ -26,25 +29,29 @@
 	<div class="main">
 
         <!--Navigation div contains menu and logo-->
-		<div class="navigation">
+		<div class="navbar row mb-3">
             
             <!--Navigation Menu for mobile users to access menu items-->
-			<h2 id="top" onclick="showMenu('nav-menu')">&#9776; <span class="menus">Menu</span></h2>
-			<div id="nav-menu" class="navigation-menu">
-                <ul>
-                    <li><a href="index.html">Home</a> </li>
-                    <li><a href="about.html">About</a> </li>
-                    <li onclick="showMenu('services-menu')">Services &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" ></i>
-                        <ul id="services-menu">
-                            <li><a href="detailing.html">Mobile Auto Detailing</a></li>
-                            <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
-                            <li><a href="painting.html">Paint Corrections</a></li>
+            <div class="col-4">
+			<button type="button" data-toggle="collapse" data-target="#nav_menu" id="top" class="btn btn-light btn-outline-dark btn-sm text-center nowrap">
+                <span class="navbar-toggler">&#9776;</span></button>
+            </div>
+			<div id="nav_menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="#">Home</a> </li>
+                    <li class="nav-item"><a href="about.html">About</a> </li>
+                    <li  class="nav-item dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services 
+                        <ul id="services-menu" class="dropdown-menu">
+                            <li class="dropdown-item"><a href="detailing.html">Mobile Auto Detailing</a></li>
+                            <li class="dropdown-item"><a href="interior.html">Immaculate Interior Conditioning</a></li>
+                            <li class="dropdown-item"><a href="painting.html">Paint Corrections</a></li>
                         </ul></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="gallery.html">Gallery</a> </li>
-                    <li><a href="reviews.html">Reviews</a> </li>
-                    <li><a href="contact.html">Contact</a> </li>
-                    <li><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa">Book Now!</a> </li>
+                    <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a> </li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a> </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a> </li>
+                    <li class="nav-item"><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa" class="nav-link">Book Now!</a> </li>
                 </ul>
 
 
@@ -52,11 +59,12 @@
             </div>
              
             <!--Add logo with link to home page-->
-            <div class="logo">
-                <a href="index.html"><img src="pics/cdlc-logo.png" alt="CDLC Logo"/></a>
+            <!-- <div class="logo"> -->
+                <a href="#" class="navbar-brand mx-auto col-4" id="logoLink">
+                    <img src="pics/cdlc-logo.png" alt="CDLC Logo" height="150" width="150" /></a>
 
             <!--End of logo div-->
-            </div>
+            <!-- </div> -->
 
             <!--Add discount statement-->
             <div class="discount">&#42; Multi-Vehicle discount with 3 or more Vehicles
@@ -67,72 +75,80 @@
         <!--End of navigation div-->
         </div>
 
-        <!--Section for Mobile Detailing-->
-        <div class="sections" id="details">
-            <a href="detailing.html">
-                <img src="pics/detailing.jpg" alt="Mobile Auto Detailing Image" id="detail"/>
-            </a>
-            <h2>Mobile Auto Detailing</h2>
-            <p class="slogan">Treat your <span class="auto">INVESTMENT</span> to a spa treatment!</p>
-            <p class="pricing">Starting at &#36;100</p>
-
-            <a href="detailing.html"><button type="button" class="learn" id="learn1">
-                Learn More</button></a>
-
-            <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa"><button type="button" class="book">
-                Book It Now!</button></a>
-
-        <!--End of detailing div-->
-        </div>
-
-        <!--Section for Interior Detailing-->
-        <div class="sections" id="interior">
-                <a href="interior.html">
-                    <img src="pics/waxing.jpg" alt="Immaculate Interior Conditioning Image" id="wax"/>
+        <div class="row">
+            <!--Section for Mobile Detailing-->
+            <div class="sections" id="details">
+                <a href="detailing.html">
+                    <img src="pics/detailing.jpg" alt="Mobile Auto Detailing Image" id="detail" />
                 </a>
-                <h2>Immaculate Interior Conditioning</h2>
-                <p class="slogan">Treat your car to the spa!</p>
-                <p class="pricing">Starting at &#36;200</p>
-    
-                <a href="interior.html"><button type="button" class="learn" id="learn2">
-                    Learn More</button></a>
-    
-                <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa"><button type="button" class="book" id="book2">
-                    Book It Now!</button></a>
-    
-        <!--End of interior div-->
-        </div>
-
-        <!--Section for Paint Corrections-->
-        <div class="sections" id="painting">
-                <a href="painting.html">
-                    <img src="pics/painting.jpg" alt="Paint Correction Image" id="paint"/>
-                </a>
-                <h2>Paint Correction</h2>
+                <h2>Mobile Auto Detailing</h2>
                 <p class="slogan">Treat your <span class="auto">INVESTMENT</span> to a spa treatment!</p>
-                <!-- <p class="pricing">Starting at &#36;60</p> -->
-                <p class="pricing">&nbsp;</p>
-    
-                <a href="painting.html"><button type="button" class="learn" id="learn3">
-                    Learn More</button></a>
-    
-                <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa"><button type="button" class="book" id="book3">
-                    Book It Now!</button></a>
-    
-        <!--End of painting div-->
+                <p class="pricing">Starting at &#36;100</p>
+
+                <div class="col-12">
+                <a href="detailing.html" role="button" class="learn">
+                    Learn More</a></div>
+
+                <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa" 
+                role="button" class="book">
+                    Book It Now!</a>
+
+            <!--End of detailing div-->
+            </div>
+
+            <!--Section for Interior Detailing-->
+            <div class="sections" id="interior">
+                    <a href="interior.html">
+                        <img src="pics/waxing.jpg" alt="Immaculate Interior Conditioning Image" id="wax"/>
+                    </a>
+                    <h2>Immaculate Interior Conditioning</h2>
+                    <p class="slogan">Treat your car to the spa!</p>
+                    <p class="pricing">Starting at &#36;200</p>
+        
+                    <div class="col-12">
+                    <a href="interior.html" role="button" class="learn">
+                        Learn More</a></div>
+        
+                    <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa" 
+                    role="button" class="book">
+                        Book It Now!</a>
+        
+            <!--End of interior div-->
+            </div>
+
+            <!--Section for Paint Corrections-->
+            <div class="sections" id="painting">
+                    <a href="painting.html">
+                        <img src="pics/painting.jpg" alt="Paint Correction Image" id="paint"/>
+                    </a>
+                    <h2>Paint Correction</h2>
+                    <p class="slogan">Treat your <span class="auto">INVESTMENT</span> to a spa treatment!</p>
+                    <!-- <p class="pricing">Starting at &#36;60</p> -->
+                    <p class="pricing"><a href="contact.html">Contact</a> for pricing!</p>
+        
+                    <div class="col-12">
+                    <a href="painting.html" role="button" class="learn">
+                        Learn More</a></div>
+        
+                    <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa"
+                    role="button" class="book">
+                        Book It Now!</a>
+        
+            <!--End of painting div-->
+            </div>
         </div>
 
         <div id="serving">
             <h2>PROUDLY SERVING</h2>
-            <p id="areas">Austin, TX and the Surrounding Areas</p>
+            <p id="areas">Charlotte, NC and the Surrounding Areas</p>
 
         <!--End of serving div-->
         </div>
 
         <!--Google Map of service area-->
         <div id="map">
-            <!--Embedded a medium-sized Google Map of Austin, TX-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220449.36396036684!2d-97.89348498683366!3d30.30768629240822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1575609269027!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <!--Embedded a medium-sized Google Map of Charlotte, NC-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208648.00594090944!2d-80.98025542959525!3d35.20335293714631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0x884650e6bf43d164!2sCharlotte%2C%20NC!5e0!3m2!1sen!2sus!4v1593728538609!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         
         <!--End of map div-->
         </div>
@@ -140,19 +156,20 @@
         <!--Footer containing all links for the site-->
         <div class="footer">
                 <ul class="menu-footer">
-                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="#">Home</a> </li>
                         <li><a href="about.html">About</a> </li>
-                        <li>Services
-                            <ul>
-                                <li><a href="detailing.html">Mobile Auto Detailing</a></li>
-                                <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
-                                <li><a href="painting.html">Paint Corrections</a></li>
-                            </ul></li>
                         <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="gallery.html">Gallery</a> </li>
                         <li><a href="reviews.html">Reviews</a> </li>
                         <li><a href="contact.html">Contact</a> </li>
                         <li><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa">Book Now!</a> </li>
+                        <li>Services
+                            <ul>
+                                <li><a href="detailing.html">Mobile Auto Detailing</a></li>
+                                <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
+                                <li><a href="painting.html">Paint Corrections</a></li>
+                            </ul>
+                        </li>
                     </ul>
         </div>
 
@@ -160,22 +177,22 @@
         <div class="final" id="f-index">
             <!--Add logo with link to home page-->
             <div class="logo">
-                    <a href="index.html"><img src="pics/cdlc-logo.png" alt="CDLC Logo"/></a>
+                    <a href="#"><img src="pics/cdlc-logo.png" alt="CDLC Logo"/></a>
     
             <!--End of logo div-->
             </div>
 
             <!--Add the hours and contact information-->
             <div class="sched">
-                Austin, TX 78717 <br />
+                Charlotte, NC <br />
                 Mon-Fri: 9am - 6pm <br />
                 Sat: 9am - 1pm <br />
                 Sun: Closed <br />
 
-                <span class="emails">&#9993;</span> <a href="mailto:cherrygurl5000o@yahoo.com?Subject=Service%20Inquiry" target="_top">
-                        CDLCAuto@gmail.com</a><br />
-                <i class="fa fa-phone" ></i> <a href="tel:5128948614" id="call">(512) 894-8614</a><br />
-                
+                <div class="col-12">
+                    <a href="contact.html"><button type="button" class="book">
+                        Contact Us</button></a>
+                </div>
             
             <!--End of sched div-->
             </div>
@@ -213,7 +230,10 @@
 
 
     <!--Javascript for the site-->
-    <script src="js/cdlc.js"></script>
+    <!-- <script src="js/cdlc.js"></script> -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="../node_modules/tether/dist/js/tether.min.js"></script> -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>

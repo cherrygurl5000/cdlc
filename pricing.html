@@ -9,8 +9,6 @@
 
     <!--Added special character for Creme de la Creme title-->
 	<title>Pricing: Cr&#1104;me de la Cr&#1104;me</title>
-
-	<link href="css/cdlc.css" rel="stylesheet"/>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
@@ -19,13 +17,10 @@
   
     <link rel="shortcut icon" href="pics/cdlc-logo.ico" type="image/x-icon" />
 
-    <style>
-    .learn {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    </style>
-  
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link href="css/cdlc.css" rel="stylesheet"/>
+     
 
 </head>
 
@@ -33,25 +28,28 @@
 	<div class="main">
 
         <!--Navigation div contains menu and logo-->
-		<div class="navigation">
+		<div class="navbar row mb-3">
             
             <!--Navigation Menu for mobile users to access menu items-->
-			<h2 id="top" onclick="showMenu('nav-menu')">&#9776; <span class="menus">Menu</span></h2>
-			<div id="nav-menu" class="navigation-menu">
-                <ul>
-                    <li><a href="index.html">Home</a> </li>
-                    <li><a href="about.html">About</a> </li>
-                    <li onclick="showMenu('services-menu')">Services &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" ></i>
+            <div class="col-4">
+			<button type="button" data-toggle="collapse" data-target="#nav_menu" id="top" class="btn btn-light btn-outline-dark btn-sm text-center nowrap">
+                <span class="navbar-toggler">&#9776;</span></button>
+            </div>
+			<div id="nav_menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="index.html">Home</a> </li>
+                    <li class="nav-item"><a href="about.html">About</a> </li>
+                    <li  class="nav-item" >Services &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" ></i>
                         <ul id="services-menu">
                             <li><a href="detailing.html">Mobile Auto Detailing</a></li>
                             <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
                             <li><a href="painting.html">Paint Corrections</a></li>
                         </ul></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="gallery.html">Gallery</a> </li>
-                    <li><a href="reviews.html">Reviews</a> </li>
-                    <li><a href="contact.html">Contact</a> </li>
-                    <li><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa">Book Now!</a> </li>
+                    <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a> </li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a> </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a> </li>
+                    <li class="nav-item"><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa" class="nav-link">Book Now!</a> </li>
                 </ul>
 
 
@@ -59,11 +57,12 @@
             </div>
                 
             <!--Add logo with link to home page-->
-            <div class="logo">
-                <a href="index.html"><img src="pics/cdlc-logo.png" alt="CDLC Logo"/></a>
+            <!-- <div class="logo"> -->
+                <a href="index.html" class="navbar-brand mx-auto col-4" id="logoLink">
+                    <img src="pics/cdlc-logo.png" alt="CDLC Logo" height="150" width="150" /></a>
 
             <!--End of logo div-->
-            </div>
+            <!-- </div> -->
 
             <!--Add discount statement-->
             <div class="discount">&#42; Multi-Vehicle discount with 3 or more Vehicles
@@ -75,15 +74,17 @@
         </div>
 
         <!--Sections given an id on each page for styling-->
-        <div class="section" id="detailing">
-            <h5>SATISFACTION GUARANTEED</h5>
-            <h1>Service Pricing</h1>
-            <p class="slogan">Treat your <span class="auto">INVESTMENT</span> to a spa treatment!</p>
-            
-            <!--Paragraph containing a short definition of services-->
-            <p class="description">Cr&#1104;me de la Cr&#1104;me Auto Spa offers a variety of mobile auto detailing services for your 
-                convenience. If a complete detail isn't for you, then try some of our A La Cart&#1104; services.
-            </p>
+        <div class="section" id="learning">
+            <div class="col-12">
+                <h5 class="mt-3">SATISFACTION GUARANTEED</h5>
+                <h1>Service Pricing</h1>
+                <p class="slogan mb-3">Treat your <span class="auto">INVESTMENT</span> to a spa treatment!</p>
+                
+                <!--Paragraph containing a short definition of services-->
+                <p class="description">Cr&#1104;me de la Cr&#1104;me Auto Spa offers a variety of mobile auto detailing services for your 
+                    convenience. If a complete detail isn't for you, then try some of our A La Cart&#1104; services.
+                </p>
+            </div>
 
             <div class="service-breaks">
                 <h2 id="windshield">CDLC Windshield Treatment</h2>
@@ -151,8 +152,8 @@
                 <p class="pricing">
                     &#36;100-&#36;175
                 </p>
-                <a href="detailing.html#detail_standard"><button type="button" class="learn">
-                    Learn More</button></a>
+                <a href="detailing.html#detail_standard" role="button" class="learn">
+                    Learn More</a>
             </div>
 
             <div class="service-breaks">
@@ -160,8 +161,8 @@
                 <p class="pricing">
                     &#36;200-&#36;275
                 </p>
-                <a href="detailing.htm#detail_full"><button type="button" class="learn">
-                    Learn More</button></a>
+                <a href="detailing.htm#detail_full" role="button" class="learn">
+                    Learn More</a>
             </div>
             
             <div class="service-breaks">
@@ -169,8 +170,8 @@
                 <p class="pricing">
                     &#36;300-&#36;400
                 </p>
-                <a href="detailing.html#detail_superior"><button type="button" class="learn">
-                    Learn More</button></a>
+                <a href="detailing.html#detail_superior" role="button" class="learn">
+                    Learn More</a>
             </div>
 
             <div class="service-breaks">
@@ -178,8 +179,8 @@
                 <p class="pricing">
                     &#36;500-&#36;650
                 </p>
-                <a href="detailing.html#detail_cdlc"><button type="button" class="learn">
-                    Learn More</button></a>
+                <a href="detailing.html#detail_cdlc" role="button" class="learn">
+                    Learn More</a>
             </div>
 
             <div class="service-breaks">
@@ -187,8 +188,8 @@
                 <p class="pricing">
                     &#36;90-&#36;140
                 </p>
-                <a href="detailing.html#monthly"><button type="button" class="learn">
-                    Learn More</button></a>
+                <a href="detailing.html#monthly" role="button" class="learn">
+                    Learn More</a>
             </div>
             
             <div class="service-breaks">
@@ -196,8 +197,8 @@
                 <p class="pricing">
                     &#36;225-&#36;300
                 </p>
-                <a href="interior.html#immaculate"><button type="button" class="learn">
-                    Learn More</button></a>
+                <a href="interior.html#immaculate" role="button" class="learn">
+                    Learn More</a>
             </div>
 
             <div class="service-breaks">
@@ -205,12 +206,14 @@
                 <p class="pricing">
                     &#36;200-&#36;300
                 </p>
-                <a href="interior.html#extraordinary"><button type="button" class="learn">
-                    Learn More</button></a>
+                <a href="interior.html#extraordinary" role="button" class="learn">
+                    Learn More</a>
             </div>
 
-        <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa"><button type="button" class="book" id="book10">
-            Book It Now!</button></a>
+            <div class="col-12">
+                <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa" role="button" class="book">
+                    Book Now!</a>
+            </div>
 
     <!--End of detailing div-->
     </div>
@@ -218,20 +221,21 @@
     <!--Footer containing all links for the site-->
     <div class="footer">
         <ul class="menu-footer">
-                <li><a href="index.html">Home</a> </li>
+                <li><a href="#">Home</a> </li>
                 <li><a href="about.html">About</a> </li>
-                <li>Services
-                    <ul>
-                        <li><a href="detailing.html">Mobile Auto Detailing</a></li>
-                        <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
-                        <li><a href="painting.html">Paint Corrections</a></li>
-                    </ul></li>
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="gallery.html">Gallery</a> </li>
                 <li><a href="reviews.html">Reviews</a> </li>
                 <li><a href="contact.html">Contact</a> </li>
                 <li><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa">Book Now!</a> </li>
-        </ul class="menu-footer">
+                <li>Services
+                    <ul>
+                        <li><a href="detailing.html">Mobile Auto Detailing</a></li>
+                        <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
+                        <li><a href="painting.html">Paint Corrections</a></li>
+                    </ul>
+                </li>
+            </ul>
     </div>
 
 <!--Div containing all vital information (hours, contact info, and social media)-->
@@ -245,15 +249,15 @@
 
     <!--Add the hours and contact information-->
     <div class="sched">
-        Austin, TX 78717 <br />
+        Charlotte, NC <br />
         Mon-Fri: 9am - 6pm <br />
         Sat: 9am - 1pm <br />
         Sun: Closed <br />
 
-        <span class="emails">&#9993;</span> <a href="mailto:cdlcauto@gmail.com?Subject=Service%20Inquiry" target="_top">
-            CDLCAuto@gmail.com</a><br />
-        <i class="fa fa-phone" ></i> <a href="tel:5128948614" id="call">(512) 894-8614</a><br />
-    
+        <div class="col-12">
+            <a href="contact.html"><button type="button" class="book">
+                Contact Us</button></a>
+        </div>
     
     <!--End of sched div-->
     </div>
@@ -288,7 +292,12 @@
 <!--End main div-->
 </div>
 
-<script src="js/cdlc.js"></script>
+
+<!--Javascript for the site-->
+<!-- <script src="js/cdlc.js"></script> -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<!-- <script src="../node_modules/tether/dist/js/tether.min.js"></script> -->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
 

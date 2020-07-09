@@ -9,8 +9,6 @@
 
     <!--Added special character for Creme de la Creme title-->
 	<title>Detailing: Cr&#1104;me de la Cr&#1104;me</title>
-
-	<link href="css/cdlc.css" rel="stylesheet"/>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
@@ -19,6 +17,9 @@
   
     <link rel="shortcut icon" href="pics/cdlc-logo.ico" type="image/x-icon" />
   
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/cdlc.css" rel="stylesheet"/>
 
 </head>
 
@@ -26,25 +27,28 @@
 	<div class="main">
 
         <!--Navigation div contains menu and logo-->
-		<div class="navigation">
+		<div class="navbar row mb-3">
             
             <!--Navigation Menu for mobile users to access menu items-->
-			<h2 id="top" onclick="showMenu('nav-menu')">&#9776; <span class="menus">Menu</span></h2>
-			<div id="nav-menu" class="navigation-menu">
-                <ul>
-                    <li><a href="index.html">Home</a> </li>
-                    <li><a href="about.html">About</a> </li>
-                    <li onclick="showMenu('services-menu')">Services &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" ></i>
+            <div class="col-4">
+			<button type="button" data-toggle="collapse" data-target="#nav_menu" id="top" class="btn btn-light btn-outline-dark btn-sm text-center nowrap">
+                <span class="navbar-toggler">&#9776;</span></button>
+            </div>
+			<div id="nav_menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="index.html">Home</a> </li>
+                    <li class="nav-item"><a href="about.html">About</a> </li>
+                    <li  class="nav-item" >Services &nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down" ></i>
                         <ul id="services-menu">
-                            <li><a href="detailing.html">Mobile Auto Detailing</a></li>
+                            <li><a href="#">Mobile Auto Detailing</a></li>
                             <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
                             <li><a href="painting.html">Paint Corrections</a></li>
-                        </li></ul>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="gallery.html">Gallery</a> </li>
-                    <li><a href="reviews.html">Reviews</a> </li>
-                    <li><a href="contact.html">Contact</a> </li>
-                    <li><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa">Book Now!</a> </li>
+                        </ul></li>
+                    <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a> </li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a> </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a> </li>
+                    <li class="nav-item"><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa" class="nav-link">Book Now!</a> </li>
                 </ul>
 
 
@@ -52,11 +56,12 @@
             </div>
                 
             <!--Add logo with link to home page-->
-            <div class="logo">
-                <a href="index.html"><img src="pics/cdlc-logo.png" alt="CDLC Logo"/></a>
+            <!-- <div class="logo"> -->
+                <a href="index.html" class="navbar-brand mx-auto col-4" id="logoLink">
+                    <img src="pics/cdlc-logo.png" alt="CDLC Logo" height="150" width="150" /></a>
 
             <!--End of logo div-->
-            </div>
+            <!-- </div> -->
 
             <!--Add discount statement-->
             <div class="discount">&#42; Multi-Vehicle discount with 3 or more Vehicles
@@ -69,22 +74,24 @@
 
         <!--Sections given an id on each page for styling-->
         <div class="section" id="detailing">
-            <a href="detailing.html">
-                <img src="pics/detailing.jpg" alt="Mobile Auto Detailing Image" id="detail"/>
-            </a>
-            <h2 id="detail_mobile">Mobile Auto Detailing</h2>
-            <p class="slogan">Treat your <span class="auto">INVESTMENT</span> to a spa treatment!</p>
-            <p class="pricing">Starting at &#36;100</p>
+            <div class="col-12">
+                <a href="#">
+                    <img src="pics/detailing.jpg" alt="Mobile Auto Detailing Image" id="detail"/>
+                </a>
+                <h2 id="detail_mobile">Mobile Auto Detailing</h2>
+                <p class="slogan">Treat your <span class="auto">INVESTMENT</span> to a spa treatment!</p>
+                <p class="pricing">Starting at &#36;100</p>
 
-            <!--Paragraph containing a short definition of services-->
-            <p class="description">Cr&#1104;me de la Cr&#1104;me Auto Spa offers a variety of mobile auto detailing services for your 
-                convenience. From exterior to interior work, we will restore your vehicle to a 
-                showroom look. Our passionate and thorough team uses only the latest and reliable 
-                products and solutions to detail your car carefully. We will provide you with complete 
-                customer satisfaction and make sure that your vehicle is returned to you on time. To 
-                receive unparalleled mobile car washing services, contact Cr&#1104;me De La Cr&#1104;me Auto Spa 
-                today!
-            </p>
+                <!--Paragraph containing a short definition of services-->
+                <p class="description">Cr&#1104;me de la Cr&#1104;me Auto Spa offers a variety of mobile auto detailing services for your 
+                    convenience. From exterior to interior work, we will restore your vehicle to a 
+                    showroom look. Our passionate and thorough team uses only the latest and reliable 
+                    products and solutions to detail your car carefully. We will provide you with complete 
+                    customer satisfaction and make sure that your vehicle is returned to you on time. To 
+                    receive unparalleled mobile car washing services, contact Cr&#1104;me De La Cr&#1104;me Auto Spa 
+                    today!
+                </p>
+            </div>
 
             <div class="service-breaks">
                 <h2 id="detail_standard">Standard Detail</h2>
@@ -204,8 +211,10 @@
             <!--End of service-breaks div-->
             </div>
 
-            <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa"><button type="button" class="book" id="book10">
-                Book It Now!</button></a>
+            <div class="col-12">
+                <a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa"><button type="button" class="book" id="book10">
+                    Book It Now!</button></a>
+            </div>
 
         <!--End of detailing div-->
         </div>
@@ -215,18 +224,19 @@
             <ul class="menu-footer">
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="about.html">About</a> </li>
-                    <li>Services
-                        <ul>
-                            <li><a href="detailing.html">Mobile Auto Detailing</a></li>
-                            <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
-                            <li><a href="painting.html">Paint Corrections</a></li>
-                        </ul></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="gallery.html">Gallery</a> </li>
                     <li><a href="reviews.html">Reviews</a> </li>
                     <li><a href="contact.html">Contact</a> </li>
                     <li><a target="_blank" href="https://square.site/book/VEQ80Y5D6XT6Q/creme-de-la-creme-auto-spa">Book Now!</a> </li>
-            </ul class="menu-footer">
+                    <li>Services
+                        <ul>
+                            <li><a href="#">Mobile Auto Detailing</a></li>
+                            <li><a href="interior.html">Immaculate Interior Conditioning</a></li>
+                            <li><a href="painting.html">Paint Corrections</a></li>
+                        </ul>
+                    </li>
+                </ul>
         </div>
 
     <!--Div containing all vital information (hours, contact info, and social media)-->
@@ -240,15 +250,16 @@
 
         <!--Add the hours and contact information-->
         <div class="sched">
-            Austin, TX 78717 <br />
+            Charlotte, NC <br />
             Mon-Fri: 9am - 6pm <br />
             Sat: 9am - 1pm <br />
             Sun: Closed <br />
 
-            <span class="emails">&#9993;</span> <a href="mailto:cdlcauto@gmail.com?Subject=Service%20Inquiry" target="_top">
-                CDLCAuto@gmail.com</a><br />
-            <i class="fa fa-phone" ></i> <a href="tel:5128948614" id="call">(512) 894-8614</a><br />
-        
+            <div class="col-12">
+                <a href="contact.html"><button type="button" class="book">
+                    Contact Us</button></a>
+            </div>
+
         
         <!--End of sched div-->
         </div>
@@ -283,7 +294,11 @@
     <!--End main div-->
     </div>
 
-    <script src="js/cdlc.js"></script>
+    <!--Javascript for the site-->
+    <!-- <script src="js/cdlc.js"></script> -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="../node_modules/tether/dist/js/tether.min.js"></script> -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     
 
